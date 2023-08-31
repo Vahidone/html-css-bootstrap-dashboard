@@ -1,0 +1,12 @@
+body {
+  background-color: #f8f9fa;
+}
+.debug {
+  background-color: rgb(244, 188, 188);
+  border: 1px solid black;
+  min-height: 60px;
+}
+:root {
+  --blu-header: #1c71e7;
+  --darkblu-aside: #051d34;
+}
