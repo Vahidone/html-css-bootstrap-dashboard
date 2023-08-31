@@ -38,13 +38,34 @@
     <!-- BODY-PAGE ------------------ -->
     <div class="body_page d-flex">
       <!-- aside ---- -->
-      <div class="aside"></div>
+      <div class="aside">
+        <div class="aside_top w-100 pt-3 text-center debug">
+          <ul class="list-unstyled">
+            <li>
+              <span><i class="fa-solid fa-house"></i></span>
+              <span class="d-none d-lg-inline-block">Home</span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-chart-simple"></i></span>
+              <span class="d-none d-lg-inline-block">Stats</span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-signal"></i></span>
+              <span class="d-none d-lg-inline-block">Signals</span>
+            </li>
+          </ul>
+        </div>
+        <div class="aside_bottom w-100 pt-3 pt-3 text-center debug">
+          <span><i class="fa-solid fa-gear"></i> </span>
+          <span class="d-none d-lg-inline-block">Signals</span>
+        </div>
+      </div>
       <!-- principal ---- -->
       <div class="principal debug">
         <!-- header ---- -->
         <header class="w-100">
           <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-3">
+            <div class="row row-cols-1 row-cols-md-3 align-items-center">
               <div class="col order-md-3 col-md-4 col-lg-3">
                 <span>Nuovo studente</span>
                 <button type="button" class="btn btn-outline-light">+</button>
@@ -59,7 +80,9 @@
                 <span class="badge rounded-pill text-bg-light">+</span>
               </div>
               <div class="col col-md-5 col-lg-3">
-                <p>Studenti online negli ultimi 30 minuti</p>
+                <span class="d-block"
+                  >Studenti online negli ultimi 30 minuti</span
+                >
                 <span>125</span>
               </div>
             </div>

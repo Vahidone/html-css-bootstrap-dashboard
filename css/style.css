@@ -19,12 +19,13 @@ body {
   --blu-header: #1c71e7;
   --darkblu-aside: #051d34;
   --lightgray_body: #f8f9fa;
+  --white: white;
 }
 /* NAVBAR ***************** */
 nav {
   height: 80px;
   background-color: var(--lightgray_body);
-  color: black;
+  color: var(--white);
 }
 /* BODY-PAGE ****************** */
 .body_page {
@@ -35,8 +36,17 @@ nav {
 .body_page .aside {
   width: 75px;
   height: 100%;
+  min-height: 500px;
   background-color: var(--darkblu-aside);
+  color: var(--white);
 }
+.body_page .aside .aside_top {
+  height: calc(100% - 160px);
+}
+.body_page .aside .aside_bottom {
+  height: 80px;
+}
+
 /* principal *** */
 .body_page .principal {
   width: calc(100vw - 75px);
