@@ -20,6 +20,7 @@ body {
   --darkblu-aside: #051d34;
   --lightgray_body: #f8f9fa;
 }
+/* NAVBAR ***************** */
 nav {
   height: 80px;
   background-color: var(--lightgray_body);
@@ -30,12 +31,28 @@ nav {
   height: 100vh;
   margin-top: 80px;
 }
+/* aside ****** */
 .body_page .aside {
   width: 75px;
   height: 100%;
   background-color: var(--darkblu-aside);
 }
+/* principal *** */
 .body_page .principal {
   width: calc(100vw - 75px);
   height: 100%;
+}
+/* header **** */
+header {
+  background-color: var(--blu-header);
+  color: white;
+}
+
+/* *******************************
+MEDIA QUERY *********
+******************************* */
+@media screen and (min-width: 992px) {
+  .body_page .aside {
+    width: 130px;
+  }
 }
