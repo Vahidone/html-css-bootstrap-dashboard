@@ -92,6 +92,15 @@ aside a.link_ctm i {
   font-size: 18px;
 }
 
+/* MAIN CONTENT ***************** */
+.offcanvas {
+  width: 100% !important;
+  height: 100vh;
+}
+.offcanvas-body .col {
+  width: 100%;
+}
+
 /* **********************************
 MEDIA QUERY 
 *********************************** */
@@ -103,5 +112,8 @@ MEDIA QUERY
 
   .main-wrap .main-content {
     width: calc(100% - 150px);
+  }
+  .offcanvas {
+    width: 55% !important;
   }
 }
