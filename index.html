@@ -1,95 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- awesome font link  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
     />
-    <!-- bootstrap and js link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <!-- css link  -->
+
+    <!-- link CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Bootstrap Dashboard</title>
   </head>
+
   <body>
-    <!-- NAVBAR -------------------- -->
-    <nav class="position-fixed t_0 zx_999 w-100 debug">
-      <div class="navbar d-flex">
-        <div class="logo h-75 debug col-2">LOGO</div>
-        <div class="search h-75 debug col-9">SEARCH</div>
-        <div class="hamburger h-75 debug col-1">H</div>
-      </div>
-    </nav>
-    <!-- BODY-PAGE ------------------ -->
-    <div class="body_page d-flex">
-      <!-- aside ---- -->
-      <div class="aside">
-        <div class="aside_top w-100 pt-3 text-center debug">
-          <ul class="list-unstyled">
-            <li>
-              <span><i class="fa-solid fa-house"></i></span>
-              <span class="d-none d-lg-inline-block">Home</span>
-            </li>
-            <li>
-              <span><i class="fa-solid fa-chart-simple"></i></span>
-              <span class="d-none d-lg-inline-block">Stats</span>
-            </li>
-            <li>
-              <span><i class="fa-solid fa-signal"></i></span>
-              <span class="d-none d-lg-inline-block">Signals</span>
-            </li>
-          </ul>
-        </div>
-        <div class="aside_bottom w-100 pt-3 pt-3 text-center debug">
-          <span><i class="fa-solid fa-gear"></i> </span>
-          <span class="d-none d-lg-inline-block">Signals</span>
-        </div>
-      </div>
-      <!-- principal ---- -->
-      <div class="principal debug">
-        <!-- header ---- -->
-        <header class="w-100">
+    <div class="main-wrap d-flex flex-wrap">
+      <!-- NAVBAR --------------------->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container p-0 m-0 mw-100">
           <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-3 align-items-center">
-              <div class="col order-md-3 col-md-4 col-lg-3">
-                <span>Nuovo studente</span>
-                <button type="button" class="btn btn-outline-light">+</button>
+            <div class="row align-items-center">
+              <!-- LOGO -->
+              <div class="col-2">
+                <a class="navbar-brand d-inline-block" href="#">
+                  <div class="img-box">
+                    <img
+                      src="img/mobile-logo.png"
+                      alt="Mobile Logo"
+                      class="d-lg-none mob-logo"
+                    />
+
+                    <img
+                      src="img/logo.svg"
+                      alt="Logo"
+                      class=".align-text-top d-none d-lg-inline-block"
+                    />
+                  </div>
+                </a>
               </div>
-              <div class="col col-md-3 col-lg-6">
-                <span>Boolean</span>
-                <span class="badge rounded-pill text-bg-light"
-                  >Piano blaze</span
+              <!-- /LOGO -->
+
+              <!-- SEARCH BAR -->
+              <div class="col">
+                <form
+                  class="d-flex rounded align-self-center form_search_bar"
+                  role="search"
                 >
-                <span class="badge rounded-pill text-bg-light">3 app</span>
-                <span>>></span>
-                <span class="badge rounded-pill text-bg-light">+</span>
+                  <label for="search_bar" class="ps-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-search"
+                      viewbox="0 0 20 20"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                      ></path>
+                    </svg>
+                  </label>
+
+                  <input
+                    class="form-control form-control-search_ctm me-2"
+                    id="search_bar"
+                    type="search"
+                    placeholder="Prova a cercare: Lezioni di Laravel"
+                    aria-label="search_bar"
+                  />
+                </form>
               </div>
-              <div class="col col-md-5 col-lg-3">
-                <span class="d-block"
-                  >Studenti online negli ultimi 30 minuti</span
-                >
-                <span>125</span>
+
+              <!-- RIGHT NAVBAR MENU -->
+              <div class="col-2 .ms-auto">
+                <ul class="list-unstyled navbar-nav py-0">
+                  <li class="nav-item collapse navbar-collapse">
+                    <a class="nav-link nav-link_ctm" href="#">asd</a>
+                  </li>
+
+                  <li class="nav-item collapse navbar-collapse">
+                    <a class="nav-link nav-link_ctm" href="#">asd</a>
+                  </li>
+
+                  <li class="nav-item collapse navbar-collapse">
+                    <a class="nav-link nav-link_ctm" href="#">asd</a>
+                  </li>
+
+                  <!-- DROPDOWN -->
+                  <li class="nav-item dropdown text-end">
+                    <a
+                      class="nav-link d-block"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end position-absolute"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- /DROPDOWN -->
+                </ul>
+              </div>
+              <!-- /RIGHT NAVBAR MENU -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ASIDE --------------------------------->
+      <aside class="">
+        <div class="container-fluid h-100">
+          <div
+            class="row h-100 d-flex flex-column flex-nowrap justify-content-between"
+          >
+            <!-- ASIDE-TOP -->
+            <div class="col col_vb text-center aside-top py-3">
+              <ul class="list-unstyled">
+                <!-- HOME -->
+                <li class="">
+                  <a class="icon-link link_ctm" href="#">
+                    <i class="fa-solid fa-home"></i>
+                    <span class="d-none d-lg-inline-block ps-2">Home</span>
+                  </a>
+                </li>
+
+                <!-- HOME -->
+                <li class="">
+                  <a class="icon-link link_ctm" href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="d-none d-lg-inline-block ps-2">Stats</span>
+                  </a>
+                </li>
+
+                <!-- HOME -->
+                <li class="">
+                  <a class="icon-link link_ctm" href="#">
+                    <i class="fa-solid fa-signal"></i>
+                    <span class="d-none d-lg-inline-block ps-2">Signals</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ASIDE-BOTTOM -->
+            <div class="col col_vb text-center mt-auto pb-3 aside-bottom">
+              <!-- HOME -->
+              <ul class="list-unstyled">
+                <li>
+                  <a class="icon-link link_ctm" href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="d-none d-lg-inline-block ps-2">Admin</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /ASIDE-BOTTOM -->
+          </div>
+        </div>
+      </aside>
+      <!-- ASIDE -->
+
+      <!-- MAIN-CONTENT ----------------------->
+      <div class="main-content">
+        <div class="container-fluid h-100">
+          <!-- MAIN-CONTENT-HEAD -->
+          <div class="row text-white">
+            <div class="col main-content-head">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4 col-lg-3 text-lg-end order-md-last">
+                    <span>Nuovo Studente +</span>
+                  </div>
+
+                  <div class="col-md-4 col-lg-6">
+                    <div>
+                      Boolean
+                      <span class="badge rounded-pill text-bg-light"
+                        >Light</span
+                      >
+                    </div>
+                    <div>
+                      <span class="badge rounded-pill text-bg-light"
+                        >Light</span
+                      >
+                      >>
+                      <span class="badge rounded-pill text-bg-light"
+                        >Light</span
+                      >
+                      <span class="badge rounded-pill text-bg-light"
+                        >Light</span
+                      >
+                      <span class="badge rounded-pill text-bg-light"
+                        >Light</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-lg-3">
+                    <div>Studenti online negli ultimi 30 minuti</div>
+                    <div>125</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </header>
-        <!-- main ----- -->
-        <main class="w-100"></main>
+
+          <!-- CONTENT ----------------------->
+          <div class="row h-100">
+            <div class="col-12 col-lg-8 order-lg-1 debug">P C</div>
+            <div class="col-12 col-lg-8 order-lg-2 debug">faq</div>
+            <div class="col-12 col-lg-4 order-lg-1 debug">T</div>
+            <div class="col-12 col-lg-4 order-lg-2 debug">G</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

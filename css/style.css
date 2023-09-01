@@ -1,68 +1,102 @@
 body {
-  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
 }
-.t_0 {
-  top: 0;
-}
-.r_0 {
-  right: 0;
-}
-.zx_999 {
-  z-index: 999;
-}
+
 .debug {
-  background-color: rgb(244, 188, 188);
+  background-color: rgb(243, 189, 189);
   border: 1px solid black;
-  min-height: 60px;
 }
-:root {
-  --blu-header: #1c71e7;
-  --darkblu-aside: #051d34;
-  --lightgray_body: #f8f9fa;
-  --white: white;
+
+.col.col_vb {
+  flex: 0 0 0%;
 }
-/* NAVBAR ***************** */
-nav {
-  height: 80px;
-  background-color: var(--lightgray_body);
-  color: var(--white);
-}
-/* BODY-PAGE ****************** */
-.body_page {
+
+.main-wrap {
   height: 100vh;
-  margin-top: 80px;
+  width: 100%;
 }
-/* aside ****** */
-.body_page .aside {
+
+.main-wrap nav {
+  height: 70px;
+  width: 100%;
+}
+
+.main-wrap aside {
+  height: calc(100vh - 70px);
   width: 75px;
-  height: 100%;
-  min-height: 500px;
-  background-color: var(--darkblu-aside);
-  color: var(--white);
-}
-.body_page .aside .aside_top {
-  height: calc(100% - 160px);
-}
-.body_page .aside .aside_bottom {
-  height: 80px;
+  background-color: red;
 }
 
-/* principal *** */
-.body_page .principal {
-  width: calc(100vw - 75px);
-  height: 100%;
+.main-wrap .main-content {
+  width: calc(100% - 150px);
+  height: calc(100vh - 70px);
+  overflow-y: auto;
 }
-/* header **** */
-header {
-  background-color: var(--blu-header);
+
+/* NAV ********************** */
+
+nav .img-box {
+  height: 100%;
+  /* line-height: 70px; */
+}
+
+nav img.mob-logo {
+  width: 40px;
+  object-fit: cover;
+}
+
+nav .form_search_bar {
+  background-color: #e5e5e5;
+}
+
+nav .form-control-search_ctm {
+  background-color: #e5e5e5;
+  line-height: 2;
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0; */
+}
+
+nav .form-control-search_ctm:focus {
+  box-shadow: none;
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+
+nav .form-control-search_ctm::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  color: #828282;
+}
+
+.main-content .main-content-head {
+  background-color: #1c71e7;
+}
+
+/* ASIDE ********************* */
+aside a.link_ctm {
+  text-decoration: none;
   color: white;
+  padding: 5px 10px;
 }
 
-/* *******************************
-MEDIA QUERY *********
-******************************* */
+aside a.link_ctm:hover {
+  background-color: #ffffff76;
+}
+
+aside a.link_ctm i {
+  font-size: 18px;
+}
+
+/* **********************************
+MEDIA QUERY 
+*********************************** */
+
 @media screen and (min-width: 992px) {
-  .body_page .aside {
-    width: 130px;
+  .main-wrap aside {
+    width: 150px;
+  }
+
+  .main-wrap .main-content {
+    width: calc(100% - 150px);
   }
 }
