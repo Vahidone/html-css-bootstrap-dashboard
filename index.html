@@ -214,7 +214,41 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-4 col-lg-3 text-lg-end order-md-last">
-                    <span class="d-block my-3">Nuovo Studente</span>
+                    <span class="d-inline-block my-3">Nuovo Studente</span>
+                    <!-- <span
+                      ><button type="button" class="btn btn-light mx-1">
+                        +
+                      </button></span
+                    > -->
+                    <button
+                      class="btn btn-light mx-2"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight"
+                    >
+                      +
+                    </button>
+
+                    <div
+                      class="offcanvas offcanvas-end"
+                      tabindex="-1"
+                      id="offcanvasRight"
+                      aria-labelledby="offcanvasRightLabel"
+                    >
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                          Offcanvas right
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="offcanvas-body">...</div>
+                    </div>
                   </div>
 
                   <div class="col-md-4 col-lg-6 my-3">
