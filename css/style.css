@@ -1,6 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+/* COLORS ******** */
+.orange_bell {
+  color: #ff8f00;
+}
 
 .debug {
   background-color: rgb(243, 189, 189);
@@ -24,7 +28,8 @@ body {
 .main-wrap aside {
   height: calc(100vh - 70px);
   width: 75px;
-  background-color: red;
+  background-color: #051d34;
+  background-image: url(../img/sidebar-bg.png);
 }
 
 .main-wrap .main-content {
