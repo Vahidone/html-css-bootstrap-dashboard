@@ -5,6 +5,9 @@ body {
 .orange_bell {
   color: #ff8f00;
 }
+.badge.bg_badge_vb {
+  background-color: #165bba;
+}
 
 .debug {
   background-color: rgb(243, 189, 189);
@@ -104,6 +107,9 @@ aside a.link_ctm i {
   width: 25px;
   height: 25px;
   display: inline-block;
+}
+.btn.btn-outline-secondary a {
+  color: #6c757d;
 }
 
 /* **********************************

@@ -47,7 +47,7 @@
           <div class="container-fluid">
             <div class="row align-items-center">
               <!-- LOGO -->
-              <div class="col-2">
+              <div class="col-auto">
                 <a class="navbar-brand d-inline-block" href="#">
                   <div class="img-box">
                     <img
@@ -67,18 +67,18 @@
               <!-- /LOGO -->
 
               <!-- SEARCH BAR -->
-              <div class="col">
+              <div class="col px-0">
                 <form
                   class="d-flex rounded align-self-center form_search_bar"
                   role="search"
                 >
-                  <label for="search_bar" class="ps-3">
+                  <label for="search_bar" class="ps-3 pt-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
                       height="20"
                       fill="currentColor"
-                      class="bi bi-search"
+                      class="bi bi-search mt-1"
                       viewbox="0 0 20 20"
                     >
                       <path
@@ -98,11 +98,11 @@
               </div>
 
               <!-- NAVBAR MENU R-->
-              <div class="col-2 .ms-auto">
+              <div class="col-1 .ms-auto">
                 <ul class="list-unstyled navbar-nav py-0">
                   <li class="nav-item collapse navbar-collapse">
                     <a class="nav-link nav-link_ctm" href="#"
-                      ><i class="fa-solid fa-bars"></i
+                      ><i class="fa-solid fa-list-ul"></i
                     ></a>
                   </li>
 
@@ -217,7 +217,7 @@
                     <span class="d-inline-block my-3">Nuovo Studente</span>
                     <!-- OFFCANVAS  -->
                     <button
-                      class="btn btn-light mx-2"
+                      class="btn btn-outline-light mx-2"
                       type="button"
                       data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasRight"
@@ -311,20 +311,27 @@
                   <div class="col-md-4 col-lg-6 my-3">
                     <div>
                       Boolean
-                      <span class="badge rounded-pill text-bg-dark"
+                      <span
+                        class="badge rounded-pill bg_badge_vb text_size_pill ms-1"
                         >Piano blaze</span
                       >
                     </div>
                     <div>
-                      <span class="badge rounded-pill text-bg-dark">3 app</span>
-                      >>
-                      <span class="badge rounded-pill text-bg-dark"
+                      <span
+                        class="badge rounded-pill bg_badge_vb text_size_pill ms-1"
+                        >3 app</span
+                      >
+                      <i class="fa-solid fa-angles-right"></i>
+                      <span
+                        class="badge rounded-pill bg_badge_vb text_size_pill ms-1"
                         >Boolean mobile app</span
                       >
-                      <span class="badge rounded-pill text-bg-dark"
+                      <span
+                        class="badge rounded-pill bg_badge_vb text_size_pill ms-1"
                         >Boolean web app</span
                       >
-                      <span class="badge rounded-pill text-bg-dark"
+                      <span
+                        class="badge rounded-pill bg_badge_vb text_size_pill ms-1"
                         >Boolean blog app</span
                       >
                     </div>
@@ -340,17 +347,17 @@
           </div>
 
           <!-- CONTENT ----------------------->
-          <div class="row h-100">
+          <div class="row">
             <div class="col-12 col-lg-8 order-lg-1">
-              <div class="card w-100 h-100 mt-3" style="width: 18rem">
+              <div class="card w-100 mt-3" style="width: 18rem">
                 <div class="card-header">Prossime classi</div>
                 <table class="table table-hover">
                   <tr>
-                    <th>Nome</th>
-                    <th>Data inizio</th>
-                    <th>ROI</th>
-                    <th>Stato</th>
-                    <th>Azione</th>
+                    <th class="w-50 fw-medium">Nome</th>
+                    <th class="text-secondary fw-medium">Data inizio</th>
+                    <th class="text-secondary fw-medium">ROI</th>
+                    <th class="text-secondary fw-medium">Stato</th>
+                    <th class="text-secondary fw-medium">Azione</th>
                   </tr>
                   <tr>
                     <td>
@@ -364,14 +371,21 @@
 
                       <span>Classe 75</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
                     <td>
                       <button type="button" class="btn btn-success">
-                        Success
+                        Done
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -385,14 +399,21 @@
 
                       <span>Classe 76</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>16 Feb 2021</td>
+                    <td>20%</td>
                     <td>
                       <button type="button" class="btn btn-success">
-                        Success
+                        Done
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -406,14 +427,22 @@
 
                       <span>Classe 77</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>17 Feb 2021</td>
+                    <td>20%</td>
                     <td>
-                      <button type="button" class="btn btn-warning">
-                        Warning
+                      <button type="button" class="btn btn-warning text-white">
+                        Process
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -427,14 +456,21 @@
 
                       <span>Classe 78</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>18 Feb 2021</td>
+                    <td>20%</td>
                     <td>
                       <button type="button" class="btn btn-success">
-                        Success
+                        Done
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -448,14 +484,21 @@
 
                       <span>Classe 79</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>19 Feb 2021</td>
+                    <td>20%</td>
                     <td>
                       <button type="button" class="btn btn-danger">
-                        Danger
+                        Failed
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -469,14 +512,21 @@
 
                       <span>Classe 80</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>20 Feb 2021</td>
+                    <td>20%</td>
                     <td>
                       <button type="button" class="btn btn-success">
-                        Success
+                        Done
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -490,14 +540,21 @@
 
                       <span>Classe 81</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>21 Feb 2021</td>
+                    <td>20%</td>
                     <td>
                       <button type="button" class="btn btn-danger">
-                        Danger
+                        Failed
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -511,21 +568,28 @@
 
                       <span>Classe 82</span>
                     </td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td>22 Feb 2021</td>
+                    <td>20%</td>
                     <td>
                       <button type="button" class="btn btn-success">
-                        Success
+                        Done
                       </button>
                     </td>
-                    <td>5</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
                   </tr>
                 </table>
               </div>
             </div>
             <div class="col-12 col-lg-8 order-lg-2">
-              <div class="card w-100 h-100 mt-4" style="width: 18rem">
-                <div class="card-header">F.Q.C.</div>
+              <div class="card w-100 mt-4" style="width: 18rem">
+                <div class="card-header">F.A.Q.</div>
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -636,73 +700,74 @@
               </div>
             </div>
             <div class="col-12 col-lg-4 order-lg-1">
-              <div class="card w-100 h-100 my-3" style="width: 18rem">
+              <div class="card w-100 mt-4">
                 <div class="card-header">Todo</div>
-                <div class="input-group mb-3">
-                  <div class="input-group-text">
-                    <input
-                      class="form-check-input mt-0"
-                      type="checkbox"
-                      value=""
-                      aria-label="Checkbox for following text input"
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    aria-label="Text input with checkbox"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-text">
-                    <input
-                      class="form-check-input mt-0"
-                      type="checkbox"
-                      value=""
-                      aria-label="Checkbox for following text input"
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    aria-label="Text input with checkbox"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-text">
-                    <input
-                      class="form-check-input mt-0"
-                      type="checkbox"
-                      value=""
-                      aria-label="Checkbox for following text input"
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    aria-label="Text input with checkbox"
-                  />
-                </div>
+
+                <ul class="list-group list-group-flush w-100">
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Kickoff nuove classi
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Lezione su Bootstrap 5 in classe #75
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Controllare username github studenti
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- form check  -->
               </div>
             </div>
             <div class="col-12 col-lg-4 order-lg-2">
-              <figure class="w-100 h-60 mt-4 rounded-2 overflow-hidden">
-                <img class="w-100 h-100" src="img/stats.jpeg" alt="" />
-              </figure>
-              <ul class="list-group w-100 h-40 mb-2">
-                <li class="list-group-item">
-                  <h5>Utenti attivi</h5>
-                  <p>
-                    Lista degli utenti attivi in piattaforma nell'ultimo mese
-                  </p>
-                </li>
-                <li class="list-group-item">Gennaio: 1200</li>
-                <li class="list-group-item">Febbraio: 800</li>
-                <li class="list-group-item">Marzo: 1500</li>
-                <li class="list-group-item">
-                  <a href="#">Visualizza report pprofondito</a>
-                </li>
-              </ul>
+              <div class="card">
+                <figure class="w-100 h-60 mt-4 rounded-2 overflow-hidden">
+                  <img class="w-100 h-100" src="img/stats.jpeg" alt="" />
+                </figure>
+                <ul class="list-group w-100 h-40 mb-2">
+                  <li class="list-group-item">
+                    <h5>Utenti attivi</h5>
+                    <p>
+                      Lista degli utenti attivi in piattaforma nell'ultimo mese
+                    </p>
+                  </li>
+                  <li class="list-group-item">Gennaio: 1200</li>
+                  <li class="list-group-item">Febbraio: 800</li>
+                  <li class="list-group-item">Marzo: 1500</li>
+                  <li class="list-group-item">
+                    <a href="#">Visualizza report pprofondito</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
