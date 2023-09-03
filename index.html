@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,7 +16,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +23,6 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -33,7 +30,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- link CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Bootstrap Dashboard</title>
@@ -41,7 +37,7 @@
 
   <body>
     <div class="main-wrap d-flex flex-wrap">
-      <!-- NAVBAR --------------------->
+      <!-- NAV ----------------------------->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container p-0 m-0 mw-100">
           <div class="container-fluid">
@@ -64,7 +60,6 @@
                   </div>
                 </a>
               </div>
-              <!-- /LOGO -->
 
               <!-- SEARCH BAR -->
               <div class="col px-0">
@@ -97,7 +92,7 @@
                 </form>
               </div>
 
-              <!-- NAVBAR MENU R-->
+              <!-- NAV MENU R--------------->
               <div class="col-1 .ms-auto">
                 <ul class="list-unstyled navbar-nav py-0">
                   <li class="nav-item collapse navbar-collapse">
@@ -143,10 +138,9 @@
                       </li>
                     </ul>
                   </li>
-                  <!-- /DROPDOWN -->
                 </ul>
               </div>
-              <!-- /RIGHT NAVBAR MENU -->
+              <!-- /NAV MENU R -->
             </div>
           </div>
         </div>
@@ -168,16 +162,12 @@
                     <span class="d-none d-lg-inline-block ps-2">Home</span>
                   </a>
                 </li>
-
-                <!-- HOME -->
                 <li class="">
                   <a class="icon-link link_ctm" href="#">
                     <i class="fa-solid fa-chart-simple"></i>
                     <span class="d-none d-lg-inline-block ps-2">Stats</span>
                   </a>
                 </li>
-
-                <!-- HOME -->
                 <li class="">
                   <a class="icon-link link_ctm" href="#">
                     <i class="fa-solid fa-signal"></i>
@@ -189,7 +179,6 @@
 
             <!-- ASIDE-BOTTOM -->
             <div class="col col_vb text-center mt-auto pb-3 aside-bottom">
-              <!-- HOME -->
               <ul class="list-unstyled">
                 <li>
                   <a class="icon-link link_ctm" href="#">
@@ -199,11 +188,9 @@
                 </li>
               </ul>
             </div>
-            <!-- /ASIDE-BOTTOM -->
           </div>
         </div>
       </aside>
-      <!-- ASIDE -->
 
       <!-- MAIN-CONTENT ----------------------->
       <div class="main-content">
@@ -215,7 +202,7 @@
                 <div class="row">
                   <div class="col-md-4 col-lg-3 text-lg-end order-md-last">
                     <span class="d-inline-block my-3">Nuovo Studente</span>
-                    <!-- OFFCANVAS  -->
+                    <!-- OFFCANVAS  ---------->
                     <button
                       class="btn btn-outline-light mx-2"
                       type="button"
@@ -244,66 +231,118 @@
                         ></button>
                       </div>
                       <div class="offcanvas-body">
-                        <div class="container-fluid">
-                          <div class="row row-cols-1 row-cols-md-2">
-                            <div class="col">
-                              <label for="inputName1" class="form-label"
-                                >Nome</label
-                              >
-                              <input
-                                type="text"
-                                id="inputName1"
-                                class="form-control"
-                                aria-describedby="passwordHelpBlock"
-                              />
-                              <label for="inputEmail1" class="form-label"
-                                >Email</label
-                              >
+                        <form class="row g-3">
+                          <div class="col-md-6">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" />
+                          </div>
+
+                          <div class="col-md-6">
+                            <label for="surname" class="form-label"
+                              >Cognome</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="surname"
+                            />
+                          </div>
+
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label"
+                              >Email</label
+                            >
+
+                            <div class="input-group">
+                              <div class="input-group-text">@</div>
                               <input
                                 type="email"
-                                id="inputemail1"
                                 class="form-control"
-                                aria-describedby="passwordHelpBlock"
-                              />
-                              <label for="inputEmail2" class="form-label"
-                                >Indrizzo Email</label
-                              >
-                              <input
-                                type="email"
-                                id="inputEmail2"
-                                class="form-control"
-                                aria-describedby="passwordHelpBlock"
-                              />
-                              <label for="inputCognome1" class="form-label"
-                                >Cognome</label
-                              >
-                              <input
-                                type="text"
-                                id="inputCognome1"
-                                class="form-control"
-                                aria-describedby="passwordHelpBlock"
-                              />
-                              <label for="inputPassword1" class="form-label"
-                                >Password</label
-                              >
-                              <input
-                                type="password"
-                                id="inputPassword1"
-                                class="form-control"
-                                aria-describedby="passwordHelpBlock"
-                              />
-                              <label for="inputPassword2" class="form-label"
-                                >Password</label
-                              >
-                              <input
-                                type="password"
-                                id="inputPassword2"
-                                class="form-control"
-                                aria-describedby="passwordHelpBlock"
+                                id="autoSizingInputGroup"
                               />
                             </div>
                           </div>
-                        </div>
+
+                          <div class="col-md-6">
+                            <label for="password" class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="password"
+                            />
+                          </div>
+
+                          <div class="col-12">
+                            <label for="address" class="form-label"
+                              >Indirizzo</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="address"
+                              placeholder="1234 Main St"
+                            />
+                          </div>
+
+                          <div class="col-md-6">
+                            <label for="city" class="form-label">Città</label>
+                            <input type="text" class="form-control" id="city" />
+                          </div>
+
+                          <div class="col-md-4">
+                            <label for="state" class="form-label">Stato</label>
+                            <select id="state" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-2">
+                            <label for="cap" class="form-label">CAP</label>
+                            <input type="text" class="form-control" id="cap" />
+                          </div>
+
+                          <div class="col-12">
+                            <div class="input-group mb-3">
+                              <input
+                                type="file"
+                                class="form-control"
+                                id="uploadFile"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="mandatory"
+                                required
+                              />
+                              <label class="form-check-label" for="mandatory">
+                                Seleziona per proseguire
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="col-12">
+                            <button
+                              type="submit"
+                              class="btn btn-primary fw-semibold"
+                            >
+                              Salva
+                            </button>
+                            <button
+                              type="reset"
+                              class="btn btn-warning fw-semibold"
+                            >
+                              Svuota
+                            </button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -347,426 +386,914 @@
           </div>
 
           <!-- CONTENT ----------------------->
-          <div class="row">
-            <div class="col-12 col-lg-8 order-lg-1">
-              <div class="card w-100 mt-3" style="width: 18rem">
-                <div class="card-header">Prossime classi</div>
-                <table class="table table-hover">
-                  <tr>
-                    <th class="w-50 fw-medium">Nome</th>
-                    <th class="text-secondary fw-medium">Data inizio</th>
-                    <th class="text-secondary fw-medium">ROI</th>
-                    <th class="text-secondary fw-medium">Stato</th>
-                    <th class="text-secondary fw-medium">Azione</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col pe-2 g-0 col-lg-8">
+              <!-- PROSSIME CLASSI -->
+              <div class="card my-4">
+                <h3 class="card-header fw-normal pb-3">Prossime classi</h3>
 
-                      <span>Classe 75</span>
-                    </td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-success">
-                        Done
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+                <div class="card-body">
+                  <table class="table table-hover">
+                    <!-- TABLE HEAD ------->
+                    <thead>
+                      <tr class="">
+                        <th scope="col" class="fw-medium text-secondary">
+                          Nome
+                        </th>
+                        <th
+                          scope="col"
+                          class="d-none d-md-table-cell fw-medium text-center text-secondary w_10"
+                        >
+                          Data Inizio
+                        </th>
+                        <th
+                          scope="col"
+                          class="d-none d-md-table-cell fw-medium text-center text-secondary w_10"
+                        >
+                          ROI
+                        </th>
+                        <th
+                          scope="col"
+                          class="fw-medium text-center text-secondary w_10"
+                        >
+                          Stato
+                        </th>
+                        <th
+                          scope="col"
+                          class="fw-medium text-center text-secondary w_10"
+                        >
+                          Azioni
+                        </th>
+                      </tr>
+                    </thead>
 
-                      <span>Classe 76</span>
-                    </td>
-                    <td>16 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-success">
-                        Done
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+                    <!-- TABLE BODY ---------->
+                    <tbody>
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 75
+                        </td>
 
-                      <span>Classe 77</span>
-                    </td>
-                    <td>17 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-warning text-white">
-                        Process
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
+                        <td class="d-none d-md-table-cell text-center">
+                          15 Feb 2021
+                        </td>
 
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+                        <td class="d-none d-md-table-cell text-center">20%</td>
 
-                      <span>Classe 78</span>
-                    </td>
-                    <td>18 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-success">
-                        Done
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+                        <td class="text-center">
+                          <span class="badge text-bg-success text_sm_badge"
+                            >Done</span
+                          >
+                        </td>
 
-                      <span>Classe 79</span>
-                    </td>
-                    <td>19 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-danger">
-                        Failed
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
 
-                      <span>Classe 80</span>
-                    </td>
-                    <td>20 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-success">
-                        Done
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow1"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
 
-                      <span>Classe 81</span>
-                    </td>
-                    <td>21 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-danger">
-                        Failed
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="fig_logo">
-                        <img
-                          class="w-100 h-100"
-                          src="img/class-avatar.jpg"
-                          alt=""
-                        />
-                      </div>
+                          <div
+                            class="modal fade"
+                            id="deleteRow1"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow1Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow1Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
 
-                      <span>Classe 82</span>
-                    </td>
-                    <td>22 Feb 2021</td>
-                    <td>20%</td>
-                    <td>
-                      <button type="button" class="btn btn-success">
-                        Done
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <a href="#"><i class="fa-solid fa-pen"></i></a>
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                </table>
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 76
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">
+                          16 Feb 2021
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">20%</td>
+
+                        <td class="text-center">
+                          <span class="badge text-bg-success text_sm_badge"
+                            >Done</span
+                          >
+                        </td>
+
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow2"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
+
+                          <div
+                            class="modal fade"
+                            id="deleteRow2"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow2Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow2Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 77
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">
+                          17 Feb 2021
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">20%</td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge text-bg-warning text_sm_badge text-white"
+                            >Process</span
+                          >
+                        </td>
+
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow3"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
+
+                          <div
+                            class="modal fade"
+                            id="deleteRow3"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow3Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow3Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 78
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">
+                          18 Feb 2021
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">20%</td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge text-bg-success text_sm_badge text-white"
+                            >Done</span
+                          >
+                        </td>
+
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow4"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
+
+                          <div
+                            class="modal fade"
+                            id="deleteRow4"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow4Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow4Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 79
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">
+                          19 Feb 2021
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">20%</td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge text-bg-danger text_sm_badge text-white"
+                            >Failed</span
+                          >
+                        </td>
+
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow5"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
+
+                          <div
+                            class="modal fade"
+                            id="deleteRow5"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow5Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow5Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 80
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">
+                          20 Feb 2021
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">20%</td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge text-bg-success text_sm_badge text-white"
+                            >Done</span
+                          >
+                        </td>
+
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow6"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
+
+                          <div
+                            class="modal fade"
+                            id="deleteRow6"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow6Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow6Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 81
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">
+                          21 Feb 2021
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">20%</td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge text-bg-danger text_sm_badge text-white"
+                            >Failed</span
+                          >
+                        </td>
+
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow7"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
+
+                          <div
+                            class="modal fade"
+                            id="deleteRow7"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow7Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow7Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td scope="row">
+                          <img
+                            src="/img/class-avatar.jpg"
+                            class="img-fluid img-thumbnail rounded-circle border-0 mob-logo"
+                            alt="Class avatar"
+                          />
+                          Classe 82
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">
+                          22 Feb 2021
+                        </td>
+
+                        <td class="d-none d-md-table-cell text-center">20%</td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge text-bg-success text_sm_badge text-white"
+                            >Done</span
+                          >
+                        </td>
+
+                        <td class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <span><i class="fa-solid fa-pencil"></i></span>
+                          </button>
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteRow8"
+                          >
+                            <span><i class="fa-solid fa-trash"></i></span>
+                          </button>
+
+                          <div
+                            class="modal fade"
+                            id="deleteRow8"
+                            tabindex="-1"
+                            aria-labelledby="deleteRow8Label"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5"
+                                    id="deleteRow8Label"
+                                  >
+                                    Elimina Classe
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <p>Vuoi davvero cancellare la classe?</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Chiudi
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Cancella la classe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-lg-8 order-lg-2">
-              <div class="card w-100 mt-4" style="width: 18rem">
-                <div class="card-header">F.A.Q.</div>
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        Accordion Item #1
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the first item's accordion body.</strong
+
+              <!-- F.A.Q -->
+              <div class="card">
+                <h3 class="card-header fw-normal pb-3">F.A.Q.</h3>
+
+                <div class="card-body">
+                  <div class="accordion accordion-flush" id="accordionFAQ">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
                         >
-                        It is shown by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                          Come aggiungere un nuovo studente?
+                        </button>
+                      </h2>
+
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFAQ"
+                      >
+                        <div class="accordion-body">
+                          <p>Clicca "+" in alto nella sezione blu.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        Accordion Item #2
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the second item's accordion body.</strong
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
                         >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFAQ"
+                      >
+                        <div class="accordion-body">
+                          <p>Clicca sull'icona della campanella.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Accordion Item #3
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <strong
-                          >This is the third item's accordion body.</strong
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
                         >
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFAQ"
+                      >
+                        <div class="accordion-body">
+                          <p>
+                            Sì. Puoi usarlo tramite qualsiasi dispositivo tu
+                            preferisca usare.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- /F.A.Q -->
             </div>
-            <div class="col-12 col-lg-4 order-lg-1">
-              <div class="card w-100 mt-4">
-                <div class="card-header">Todo</div>
 
-                <ul class="list-group list-group-flush w-100">
-                  <li class="list-group-item">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Kickoff nuove classi
-                      </label>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Lezione su Bootstrap 5 in classe #75
-                      </label>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Controllare username github studenti
-                      </label>
-                    </div>
-                  </li>
-                </ul>
+            <div class="col ps-2 col-lg-4 flex-shrink-0">
+              <div class="card my-4">
+                <h3 class="card-header fw-normal pb-3">Todo</h3>
 
-                <!-- form check  -->
+                <div class="card-body">
+                  <ul class="list-group text_sm">
+                    <li class="list-group-item">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                        id="firstCheckbox"
+                      />
+                      <label class="form-check-label" for="firstCheckbox"
+                        >Kickoff nuove classi</label
+                      >
+                    </li>
+
+                    <li class="list-group-item">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                        id="secondCheckbox"
+                      />
+                      <label class="form-check-label" for="secondCheckbox"
+                        >Lezione su Bootstrap 5 in classe #105</label
+                      >
+                    </li>
+
+                    <li class="list-group-item">
+                      <input
+                        class="form-check-input me-1"
+                        type="checkbox"
+                        value=""
+                        id="thirdCheckbox"
+                      />
+                      <label class="form-check-label" for="thirdCheckbox"
+                        >Controllare username github studenti</label
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-lg-4 order-lg-2">
-              <div class="card">
-                <figure class="w-100 h-60 mt-4 rounded-2 overflow-hidden">
-                  <img class="w-100 h-100" src="img/stats.jpeg" alt="" />
-                </figure>
-                <ul class="list-group w-100 h-40 mb-2">
-                  <li class="list-group-item">
-                    <h5>Utenti attivi</h5>
-                    <p>
-                      Lista degli utenti attivi in piattaforma nell'ultimo mese
-                    </p>
-                  </li>
-                  <li class="list-group-item">Gennaio: 1200</li>
-                  <li class="list-group-item">Febbraio: 800</li>
-                  <li class="list-group-item">Marzo: 1500</li>
-                  <li class="list-group-item">
-                    <a href="#">Visualizza report pprofondito</a>
-                  </li>
-                </ul>
+
+              <div class="card my-4">
+                <div class="card-body">
+                  <ul class="list-group p-0 m-0">
+                    <li class="list-group-item">
+                      <img
+                        src="/img/stats.jpeg"
+                        class="card-img-top img-fluid"
+                        alt=""
+                      />
+                      <h5 class="card-title fw-normal">Utenti attivi</h5>
+                      <p>
+                        <small
+                          >Lista degli utenti attivi in piattaforma nell'ultimo
+                          mese.</small
+                        >
+                      </p>
+                    </li>
+
+                    <li class="list-group-item">
+                      <small>Gennaio: 1200</small>
+                    </li>
+
+                    <li class="list-group-item">
+                      <small>Febbraio: 800</small>
+                    </li>
+
+                    <li class="list-group-item">
+                      <small>Marzo: 1500</small>
+                    </li>
+
+                    <li class="list-group-item">
+                      <p>
+                        <small
+                          ><a href="#" class=""
+                            >Visualizza report approfondito</a
+                          ></small
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

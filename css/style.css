@@ -1,17 +1,17 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-/* COLORS ******** */
+
+.debug {
+  background-color: rgb(243, 189, 189);
+  border: 1px solid black;
+}
+/* COLORS ************* */
 .orange_bell {
   color: #ff8f00;
 }
 .badge.bg_badge_vb {
   background-color: #165bba;
-}
-
-.debug {
-  background-color: rgb(243, 189, 189);
-  border: 1px solid black;
 }
 
 .col.col_vb {
@@ -60,8 +60,6 @@ nav .form_search_bar {
 nav .form-control-search_ctm {
   background-color: #e5e5e5;
   line-height: 2;
-  /* border-top-left-radius: 0;
-  border-bottom-left-radius: 0; */
 }
 
 nav .form-control-search_ctm:focus {
@@ -111,6 +109,10 @@ aside a.link_ctm i {
 .btn.btn-outline-secondary a {
   color: #6c757d;
 }
+td img {
+  width: 30px;
+  height: 30px;
+}
 
 /* **********************************
 MEDIA QUERY 
@@ -120,11 +122,12 @@ MEDIA QUERY
   .main-wrap aside {
     width: 150px;
   }
+  .offcanvas.offcanvas-end {
+    max-width: 700px;
+    text-align: left;
+  }
 
   .main-wrap .main-content {
     width: calc(100% - 150px);
-  }
-  .offcanvas {
-    width: 55% !important;
   }
 }
